@@ -1,0 +1,826 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Varela Round', sans-serif;
+}
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Montserrat', sans-serif;
+}
+
+/**************************** navbar section *********************************/
+.navbar{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background: rgba(0, 0, 0, .3);
+}
+.navbar-brand{
+    font-size: 28px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: 'Varela Round', sans-serif;
+    color: #fff;
+    text-decoration: none;
+}
+.navbar-brand:hover{
+    color: #ffff;
+}
+.nav-item{
+    margin-right: 10px;
+}
+.nav-link{
+    color: #fff;
+    transition: all .5 ease;
+}
+.nav-link:hover{
+    color:rgb(209, 205, 205);
+    border-bottom: 2px solid #fff;
+    padding-bottom: 0px;
+}
+
+/******************************* home section ******************************/
+#home{
+    background-image: url(img/desktop.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+#home .overlay{
+    background: rgba(0, 0, 0, .7);
+    padding: 180px 0px;
+}
+#home h1{
+    font-size: 54px;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    margin-bottom: 20px;
+}
+#home p{
+    font-size: 16px;
+    color: #fff;
+    font-family: 'Varela Round', sans-serif;
+    line-height: 1.6;
+    margin: 0px 0px 10px;
+}
+#home .btn{
+    margin: 20px 0px 0px;
+    font-size: 16px;
+    padding: 10px 35px;
+    background: #fff;
+    color: #000;
+    margin-right: 10px;
+    text-transform: capitalize;
+    transition: all .5 ease;
+}
+#home .btn:hover{
+    color: #fff;
+    background: rgba(0, 0, 0, .6);
+}
+#home .btn-2{
+    margin: 20px 0px 0px;
+    font-size: 16px;
+    padding: 10px 35px;
+    background: #6195FF;
+    color: #fff;
+    text-transform: capitalize;
+    transition: all .5 ease;    
+}
+
+
+/******************************* welcome section *********************************/
+#welcome{
+    padding: 120px 0px;
+}
+#welcome .card{
+    padding: 40px 20px;
+    position: relative;
+    overflow: hidden;
+    background: transparent;
+}
+#welcome .slider{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: -100%;
+    transition: all .3s;
+    background: #1C1D21;
+    top: 0;
+}
+#welcome .card:hover .slider{
+    left: 0;
+    z-index: -900;
+}
+#welcome .card:hover h3{
+    color: #fff;
+}
+#welcome h2{
+    font-size: 32px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: #10161A;
+    margin-bottom: 50px;
+}
+#welcome i{
+    font-size: 34px;
+    color: #6195FF;
+    margin-bottom: 20px;
+}
+#welcome h3{
+    font-size: 21px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    color: #10161A;
+}
+#welcome p{
+    font-family: 'Varela Round', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    overflow-x: hidden;
+    color: #868F9B;
+}
+#welcome .btn{
+    text-decoration: none;
+    color: #6195FF;
+    display: inline-block;
+}
+
+
+/************************* future work *************************/
+#future{
+    padding: 120px 0px;
+    background: #FAFAFA;
+}
+#future h2{
+    font-size: 32px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: #10161A;
+    margin-bottom: 50px;
+    text-transform: capitalize;
+}
+#future .card{
+    padding: 20px;
+    position: relative;
+    overflow: hidden;
+}
+#future img{
+    width: 100%;
+    height: 100%;
+    max-height: 413px;
+}
+#future .overlay-img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, .7);
+    display: none;
+}
+#future .card:hover .overlay-img{
+    display: block;
+}
+#future .overlay-img p{
+    color: #4E95FF;
+    margin-top: 170px;
+    text-transform: uppercase;
+}
+#future .overlay-img h3{
+    font-size: 21px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+#future .overlay-img a i{
+    background: #4E95FF;
+    padding: 18px;
+    color: #fff;
+    transition: all .3s ease;
+}
+#future .overlay-img a:hover i{
+    background: #183a6d;
+    opacity: .8;
+}
+
+/************************* offer section **************************/
+#offer{
+    padding: 120px 0px;
+}
+#offer h2{
+    font-size: 32px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: #10161A;
+    margin-bottom: 50px;
+    text-transform: capitalize;
+    text-align: center;
+}
+#offer .media{
+    padding: 25px;
+    position: relative;
+    overflow: hidden;
+    background: transparent;
+}
+#offer .slider{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: -100%;
+    top: 0px;
+    background: #1C1D21;
+    transition: all .2s ease;
+}
+#offer .media:hover .slider{
+    left: 0;
+    z-index: -900;
+}
+#offer .media:hover h3{
+    color: #fff;
+    transition: all .2s ease;
+}
+#offer .media i{
+    font-size: 32px;
+    color: #6195FF;
+}
+#offer .media h3{
+    font-size: 21px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    color: #000;
+    text-transform: capitalize;
+}
+#offer .media p{
+    font-family: 'Varela Round', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    overflow-x: hidden;
+    color: #868F9B;
+}
+
+/* ****************choose section************************ */
+#choose{
+    padding: 120px 0px;
+    background: #FAFAFA;
+}
+#choose h2{
+    font-size: 32px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: #10161A;
+    margin-bottom: 50px;
+    text-transform: capitalize;
+}
+#choose p{
+    font-family: 'Varela Round', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    overflow-x: hidden;
+    color: #868F9B;
+}
+#choose i{
+    color: #6195FF;
+    border: 1px solid #6195FF;
+    border-radius: 50%;
+    padding: 5px;
+    margin-right: 10px;
+}
+#choose span{
+    font-family: 'Varela Round', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    overflow-x: hidden;
+    color: #868F9B;
+}
+#choose .carousel-item img{
+    min-height: 405px;
+}
+
+
+/* ************************page review********************** */
+#review{
+    background-image: url(img/desktop.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    opacity: .9;
+}
+#review .overlay{
+    padding: 80px 0px;
+    background: rgba(0, 0, 0, .8);
+}
+#review i{
+    font-size: 32px;
+    color: #6195FF;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+#review h2{
+    font-size: 32px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #fff;
+    text-transform: capitalize;
+}
+#review p{
+    font-family: 'Varela Round', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    overflow-x: hidden;
+    text-transform: capitalize;
+    font-weight: 700;
+    color: #fff;
+}
+
+
+/************************* pricing table ************************/
+#pricing{
+    padding: 120px 0px;
+}
+#pricing h2{
+    font-size: 32px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: #10161A;
+    margin-bottom: 50px;
+    text-transform: capitalize;
+    text-align: center;
+}
+#pricing p{
+    font-family: 'Varela Round', sans-serif;
+    font-size: 18px;
+    line-height: 1.6;
+    overflow-x: hidden;
+    text-transform: uppercase;
+    color: #868F9B;
+}
+#pricing h3{
+    font-size: 42px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: #000;
+    text-transform: capitalize;
+    border: 2px solid #6195FF;
+    display: inline-block;
+    margin: 0 auto;
+    padding: 30px 35px;
+    border-radius: 50%;
+}
+#pricing .duration{
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+}
+#pricing ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-top: 20px;
+}
+#pricing ul li{
+    display: block;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+    color: #868F9B;
+}
+#pricing .btn{
+    margin: 20px 0px 0px;
+    font-size: 16px;
+    padding: 10px 35px;
+    color: #6195FF;
+    text-transform: capitalize;
+    border: 1px solid #6195FF;
+    
+}
+#pricing .card{
+    position: relative;
+    overflow: hidden;
+    background: transparent;
+}
+#pricing .top-slide{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: -100%;
+    left: 0px;
+    background: #1C1D21;
+    transition: all .2s ease;
+}
+#pricing .card:hover .top-slide{
+    top: 0px;
+    z-index: -900;
+}
+#pricing .card:hover h3{
+    color: #fff;
+}
+#pricing .card-body:hover p{
+    color: #6195FF;
+}
+
+
+/* ************************testimonial section *********************** */
+#testimonial{
+    background-image: url(img/apple-coffee.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    opacity: .9;
+}
+#testimonial .overlay{
+    padding: 120px 0px;
+    background: rgba(0, 0, 0, .8);
+}
+#testimonial .media img{
+    border-radius: 50%;
+    margin-right: 20px;
+}
+#testimonial .media-body h3{
+    font-size: 21px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    margin-top: 0px;
+    color: #fff;
+    text-transform: capitalize;
+}
+#testimonial .media-body span{
+    color: #6195FF;
+    text-transform: uppercase;
+    margin-top: 5px;
+    display: block;
+}
+#testimonial .media{
+    margin-bottom: 20px;
+}
+#testimonial p{
+    font-family: 'Varela Round', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    overflow-x: hidden;
+    color: #fff;
+}
+
+
+/* ****************** our team ************************ */
+#team{
+    padding: 120px 0px;
+}
+#team h2{
+    font-size: 32px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: #10161A;
+    margin-bottom: 50px;
+    text-transform: capitalize;
+    text-align: center;
+}
+#team .card-body h3{
+    font-size: 21px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: #000;
+    text-transform: capitalize;
+    margin-top: 20px;
+    display: block;
+}
+#team span{
+    font-family: 'Varela Round', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    overflow-x: hidden;
+    text-transform: uppercase;
+    color: #6195FF;
+    display: block;
+}
+#team .card{
+    position: relative;
+    overflow: hidden;
+    background: transparent;
+}
+#team .top-slider{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: -100%;
+    left: 0;
+    background: #1C1D21;
+    transition: all .2s ease;
+}
+#team .card:hover .top-slider{
+    top: 0;
+    z-index: -90;
+}
+#team .card:hover h3{
+    color: #fff;
+}
+#team .social-link{
+    position: absolute;
+    top: 36px;
+    right: 20px;
+    background: #4E95FF;
+    display: none;
+}
+#team .social-link a{
+    text-decoration: none;
+    display: block;
+}
+#team .social-link a i{
+    padding: 10px;
+    font-size: 18px;
+    color: #fff;
+    transition: all .3s;
+}
+#team .card:hover .social-link{
+    display: block;
+}
+#team .social-link a i:hover{
+    color: #0b3068;
+}
+
+/* ************************ recent post ************************ */
+#recent{
+    padding: 120px 0px;
+    background: #FAFAFA;
+}
+#recent h2{
+    font-size: 32px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: #10161A;
+    margin-bottom: 50px;
+    text-transform: capitalize;
+    text-align: center;
+}
+#recent .card-body ul{
+    list-style: none;
+    margin-bottom: 20px;
+}
+#recent .card-body ul li{
+    margin-right: 10px;
+    display: inline-block;
+}
+#recent .card-body ul li i{
+    margin-right: 6px;
+    color: #6195FF;
+}
+#recent .card-body h3{
+    font-size: 21px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: #000;
+    text-transform: capitalize;
+    margin-top: 20px;
+    display: block;
+}
+#recent p{
+    font-family: 'Varela Round', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    overflow-x: hidden;
+    color: #868F9B;
+}
+#recent .btn{
+    color: #6195FF;
+    text-transform: capitalize;
+    padding-left: 0;
+}
+
+/***************** touch in section ***************/
+#touch{
+    padding: 120px 0px;
+}
+#touch h2{
+    font-size: 32px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: #10161A;
+    margin-bottom: 50px;
+    text-transform: capitalize;
+    text-align: center;
+}
+#touch i{
+    font-size: 40px;
+    color: #6195FF;
+    display: block;
+    margin-bottom: 20px;
+}
+#touch h3{
+    font-size: 21px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: #000;
+    text-transform: capitalize;
+    display: block;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+#touch span{
+    font-size: 16px;
+    color: #868F9B;
+    margin-bottom: 20px;
+    display: block;
+}
+#touch .btn{
+    opacity: .6;
+}
+
+/* **********************footer section********************* */
+#footer{
+    padding: 90px 0px;
+    background: #1C1D21;
+}
+#footer .footer-logo{
+    text-decoration: none;
+    margin-bottom: 40px;
+}
+#footer .footer-logo h2{
+    font-size: 50px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    color: #fff;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+    text-align: center;
+}
+#footer .link-sec{
+    display: block;
+    margin-bottom: 20px;
+}
+#footer .link-sec a{
+    text-decoration: none;
+}
+#footer a i{
+    font-size: 18px;
+    color: #fff;
+    display: inline-block;
+    background: #6195FF;
+    padding: 15px;
+    width: 50px;
+    height: 50px;
+    margin: 0px 5px 0px 5px;
+    transition: all .5s;
+}
+#footer .link-sec a i:hover{
+    color: #6195FF;
+    background: #fff;
+}
+#footer p{
+    color: #868F9B;
+}
+#footer .myname:hover{
+    color: red;
+    text-decoration: none;
+    transition: .5s;
+}
+
+
+/* responsive design */
+@media(max-width: 767px){
+    .navbar{
+        background-color: rgba(0, 0, 0, .8);
+    }
+
+
+    #home .overlay{
+        padding: 130px 0px 80px 0px;
+    }
+    #home h1{
+        font-size: 34px;
+    }
+
+
+    #welcome{
+        padding: 80px 0px;
+    }
+    #welcome h2{
+        font-size: 28px;
+        margin-bottom: 30px;
+    }
+    #welcome .card{
+        margin: 10px 0px;
+        border: 0;
+    }
+
+    #future{
+        padding: 0px 0px 80px 0px;
+    }
+    #future h2{
+        font-size: 28px;
+        margin-bottom: 30px;
+    }
+
+    #offer{
+        padding: 0px 0px 80px 0px;
+    }
+    #offer h2{
+        font-size: 28px;
+        margin-bottom: 30px;
+    }
+    #offer .media{
+        margin: 10px 0px;
+    }
+    #choose{
+        padding: 0px 0px 80px 0px;
+    }
+    #choose h2{
+        font-size: 28px;
+        margin-bottom: 30px;
+    }
+
+
+    #review{
+        
+    }
+    #review .col-md-3{
+        margin-bottom: 30px;
+    }
+    #review i, #review h2{
+        margin-bottom: 10px;
+    }
+    
+
+
+    #pricing{
+        padding: 80px 0px;
+    }
+    #pricing h2{
+        font-size: 28px;
+        margin-bottom: 30px;
+    }
+    #pricing .card{
+        margin: 10px 0px;
+    }
+
+
+    #testimonial .media{
+        margin-bottom: 15px;
+    }
+    #testimonial .col-md-5{
+        margin-bottom: 40px;
+    }
+
+
+    #team{
+        padding: 80px 0px;
+    }
+    #team h2{
+        font-size: 28px;
+        margin-bottom: 30px;
+    }
+    
+
+
+
+    #recent{
+        padding: 80px 0px;
+    }
+    #recent h2{
+        font-size: 28px;
+        margin-bottom: 30px;
+    }
+
+
+    #touch{
+        padding: 80px 0px;
+    }
+    #touch h2{
+        font-size: 28px;
+        margin-bottom: 30px;
+    }
+    #touch .col-md-4{
+        margin-bottom: 30px;
+    }
+    #touch i, #touch h3{
+        margin-bottom: 10px;
+    }
+
+
+
+    #footer{
+        padding: 70px 0px;
+    }
+    #footer .footer-logo h2{
+        font-size: 40px;
+        margin-bottom: 40px;
+    }
+    #footer a i{
+        font-size: 16px;
+        padding: 10px;
+        width: 40px;
+        height: 40px;
+        margin: 0px 2px 0px 2px;
+    }
+}
